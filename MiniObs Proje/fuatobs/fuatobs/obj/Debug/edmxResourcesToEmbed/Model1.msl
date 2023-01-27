@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fuatobsdbModelStoreContainer" CdmEntityContainer="fuatobsdbEntities2">
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="fuatobsdbModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="fuatobsdbModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="fuatobsdbModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="fuatobsdbModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fuatobsdbModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="fuatobsdbModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fuatobsdbModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="fuatobsdbModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="fuatobsdbModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="Ders">
+      <EntityTypeMapping TypeName="fuatobsdbModel.Ders">
+        <MappingFragment StoreEntitySet="Ders">
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+          <ScalarProperty Name="DersID" ColumnName="DersID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogreciisleri">
+      <EntityTypeMapping TypeName="fuatobsdbModel.Ogreciisleri">
+        <MappingFragment StoreEntitySet="Ogreciisleri">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="kullanıcıAdı" ColumnName="kullanıcıAdı" />
+          <ScalarProperty Name="OgrenciisleriId" ColumnName="OgrenciisleriId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenci">
+      <EntityTypeMapping TypeName="fuatobsdbModel.Ogrenci">
+        <MappingFragment StoreEntitySet="Ogrenci">
+          <ScalarProperty Name="Memleket" ColumnName="Memleket" />
+          <ScalarProperty Name="SinifId" ColumnName="SinifId" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="OgrenciID" ColumnName="OgrenciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciDers">
+      <EntityTypeMapping TypeName="fuatobsdbModel.OgrenciDers">
+        <MappingFragment StoreEntitySet="OgrenciDers">
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OgrenciDersID" ColumnName="OgrenciDersID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrencii">
+      <EntityTypeMapping TypeName="fuatobsdbModel.Ogrencii">
+        <MappingFragment StoreEntitySet="Ogrencii">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="kullanıcıAdı" ColumnName="kullanıcıAdı" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciNot">
+      <EntityTypeMapping TypeName="fuatobsdbModel.OgrenciNot">
+        <MappingFragment StoreEntitySet="OgrenciNot">
+          <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+          <ScalarProperty Name="ButunlemeNotu" ColumnName="ButunlemeNotu" />
+          <ScalarProperty Name="FinalNotu" ColumnName="FinalNotu" />
+          <ScalarProperty Name="VizeNotu" ColumnName="VizeNotu" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OgrenciNotID" ColumnName="OgrenciNotID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogretmen">
+      <EntityTypeMapping TypeName="fuatobsdbModel.Ogretmen">
+        <MappingFragment StoreEntitySet="Ogretmen">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="kullanıcıAdı" ColumnName="kullanıcıAdı" />
+          <ScalarProperty Name="OgretmenId" ColumnName="OgretmenId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sinif">
+      <EntityTypeMapping TypeName="fuatobsdbModel.Sinif">
+        <MappingFragment StoreEntitySet="Sinif">
+          <ScalarProperty Name="SinifAd" ColumnName="SinifAd" />
+          <ScalarProperty Name="SinifID" ColumnName="SinifID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="fuatobsdbModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deneme">
+      <EntityTypeMapping TypeName="fuatobsdbModel.deneme">
+        <MappingFragment StoreEntitySet="deneme">
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ÖgrencininNOTU">
+      <EntityTypeMapping TypeName="fuatobsdbModel.ÖgrencininNOTU">
+        <MappingFragment StoreEntitySet="ÖgrencininNOTU">
+          <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+          <ScalarProperty Name="ButunlemeNotu" ColumnName="ButunlemeNotu" />
+          <ScalarProperty Name="FinalNotu" ColumnName="FinalNotu" />
+          <ScalarProperty Name="VizeNotu" ColumnName="VizeNotu" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vOgrenci">
+      <EntityTypeMapping TypeName="fuatobsdbModel.vOgrenci">
+        <MappingFragment StoreEntitySet="vOgrenci">
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="OgrenciID" ColumnName="OgrenciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vOgrenciDers">
+      <EntityTypeMapping TypeName="fuatobsdbModel.vOgrenciDers">
+        <MappingFragment StoreEntitySet="vOgrenciDers">
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="SinifId" ColumnName="SinifId" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="SinifAd" ColumnName="SinifAd" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OgrenciDersID" ColumnName="OgrenciDersID" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vOgrenciNot">
+      <EntityTypeMapping TypeName="fuatobsdbModel.vOgrenciNot">
+        <MappingFragment StoreEntitySet="vOgrenciNot">
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="SınavNotu" ColumnName="SınavNotu" />
+          <ScalarProperty Name="SinavTuru" ColumnName="SinavTuru" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OgrenciNotID" ColumnName="OgrenciNotID" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

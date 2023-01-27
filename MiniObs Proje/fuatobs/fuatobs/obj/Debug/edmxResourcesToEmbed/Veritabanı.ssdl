@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fuatobsdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Ders">
+    <Key>
+      <PropertyRef Name="DersID" />
+    </Key>
+    <Property Name="DersID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DersAd" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ogrenci">
+    <Key>
+      <PropertyRef Name="OgrenciID" />
+    </Key>
+    <Property Name="OgrenciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OgrenciNo" Type="nchar" MaxLength="10" />
+    <Property Name="Ad" Type="nvarchar(max)" />
+    <Property Name="Soyad" Type="nvarchar(max)" />
+    <Property Name="DogumTarihi" Type="datetime" />
+    <Property Name="Cinsiyet" Type="nchar" MaxLength="10" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
+    <Property Name="Resim" Type="varbinary(max)" />
+    <Property Name="SinifId" Type="int" />
+    <Property Name="Memleket" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gno" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="OgrenciDers">
+    <Key>
+      <PropertyRef Name="OgrenciDersID" />
+    </Key>
+    <Property Name="OgrenciDersID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OgrenciId" Type="int" />
+    <Property Name="DersId" Type="int" />
+    <Property Name="OgrenciNo" Type="int" />
+  </EntityType>
+  <EntityType Name="OgrenciNot">
+    <Key>
+      <PropertyRef Name="OgrenciNotID" />
+    </Key>
+    <Property Name="OgrenciNotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OgrenciId" Type="int" />
+    <Property Name="DersId" Type="int" />
+    <Property Name="SinavTuru" Type="nvarchar" MaxLength="50" />
+    <Property Name="Vize" Type="nchar" MaxLength="10" />
+    <Property Name="Final" Type="nchar" MaxLength="10" />
+    <Property Name="Bütünleme" Type="nchar" MaxLength="10" />
+    <Property Name="SinavNotu" Type="nchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Sinif">
+    <Key>
+      <PropertyRef Name="SinifID" />
+    </Key>
+    <Property Name="SinifID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SinifAd" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'fuatobsdb.dbo.vOgrenci' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vOgrenci">
+    <Key>
+      <PropertyRef Name="OgrenciId" />
+    </Key>
+    <Property Name="OgrenciId" Type="int" Nullable="false" />
+    <Property Name="OgrenciNo" Type="nchar" MaxLength="10" />
+    <Property Name="Ad" Type="nvarchar(max)" />
+    <Property Name="Soyad" Type="nvarchar(max)" />
+    <Property Name="DogumTarihi" Type="datetime" />
+    <Property Name="Cinsiyet" Type="nchar" MaxLength="10" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
+    <Property Name="Resim" Type="varbinary(max)" />
+    <Property Name="SinifId" Type="int" />
+    <Property Name="SinifAd" Type="nvarchar" MaxLength="15" />
+    <Property Name="Memleket" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'fuatobsdb.dbo.vOgrenciDers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vOgrenciDers">
+    <Key>
+      <PropertyRef Name="DersAd" />
+      <PropertyRef Name="OgrenciDersID" />
+    </Key>
+    <Property Name="DersAd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OgrenciDersID" Type="int" Nullable="false" />
+    <Property Name="OgrenciId" Type="int" />
+    <Property Name="DersId" Type="int" />
+    <Property Name="OgrenciNo" Type="nchar" MaxLength="10" />
+    <Property Name="Ad" Type="nvarchar(max)" />
+    <Property Name="Soyad" Type="nvarchar(max)" />
+    <Property Name="SinifId" Type="int" />
+    <Property Name="SinifAd" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'fuatobsdb.dbo.vOgrenciNot' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vOgrenciNot">
+    <Key>
+      <PropertyRef Name="DersAd" />
+      <PropertyRef Name="OgrenciNotID" />
+    </Key>
+    <Property Name="DersAd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OgrenciNotID" Type="int" Nullable="false" />
+    <Property Name="OgrenciId" Type="int" />
+    <Property Name="DersId" Type="int" />
+    <Property Name="SinavTuru" Type="nvarchar" MaxLength="50" />
+    <Property Name="Vize" Type="nchar" MaxLength="10" />
+    <Property Name="Final" Type="nchar" MaxLength="10" />
+    <Property Name="Bütünleme" Type="nchar" MaxLength="10" />
+    <Property Name="Ad" Type="nvarchar(max)" />
+    <Property Name="OgrenciNo" Type="nchar" MaxLength="10" />
+    <Property Name="Soyad" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Ogrenci_Sinif">
+    <End Role="Sinif" Type="Self.Sinif" Multiplicity="0..1" />
+    <End Role="Ogrenci" Type="Self.Ogrenci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sinif">
+        <PropertyRef Name="SinifID" />
+      </Principal>
+      <Dependent Role="Ogrenci">
+        <PropertyRef Name="SinifId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciDers_Ders">
+    <End Role="Ders" Type="Self.Ders" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="Self.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersID" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="DersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciNot_Ders1">
+    <End Role="Ders" Type="Self.Ders" Multiplicity="0..1" />
+    <End Role="OgrenciNot" Type="Self.OgrenciNot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersID" />
+      </Principal>
+      <Dependent Role="OgrenciNot">
+        <PropertyRef Name="DersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciNot_Ogrenci">
+    <End Role="Ogrenci" Type="Self.Ogrenci" Multiplicity="0..1" />
+    <End Role="OgrenciNot" Type="Self.OgrenciNot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenci">
+        <PropertyRef Name="OgrenciID" />
+      </Principal>
+      <Dependent Role="OgrenciNot">
+        <PropertyRef Name="OgrenciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="fuatobsdbModelStoreContainer">
+    <EntitySet Name="Ders" EntityType="Self.Ders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ogrenci" EntityType="Self.Ogrenci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OgrenciDers" EntityType="Self.OgrenciDers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OgrenciNot" EntityType="Self.OgrenciNot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sinif" EntityType="Self.Sinif" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vOgrenci" EntityType="Self.vOgrenci" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vOgrenci].[OgrenciId] AS [OgrenciId], 
+    [vOgrenci].[OgrenciNo] AS [OgrenciNo], 
+    [vOgrenci].[Ad] AS [Ad], 
+    [vOgrenci].[Soyad] AS [Soyad], 
+    [vOgrenci].[DogumTarihi] AS [DogumTarihi], 
+    [vOgrenci].[Cinsiyet] AS [Cinsiyet], 
+    [vOgrenci].[Telefon] AS [Telefon], 
+    [vOgrenci].[Resim] AS [Resim], 
+    [vOgrenci].[SinifId] AS [SinifId], 
+    [vOgrenci].[SinifAd] AS [SinifAd], 
+    [vOgrenci].[Memleket] AS [Memleket]
+    FROM [dbo].[vOgrenci] AS [vOgrenci]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vOgrenciDers" EntityType="Self.vOgrenciDers" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vOgrenciDers].[DersAd] AS [DersAd], 
+    [vOgrenciDers].[OgrenciDersID] AS [OgrenciDersID], 
+    [vOgrenciDers].[OgrenciId] AS [OgrenciId], 
+    [vOgrenciDers].[DersId] AS [DersId], 
+    [vOgrenciDers].[OgrenciNo] AS [OgrenciNo], 
+    [vOgrenciDers].[Ad] AS [Ad], 
+    [vOgrenciDers].[Soyad] AS [Soyad], 
+    [vOgrenciDers].[SinifId] AS [SinifId], 
+    [vOgrenciDers].[SinifAd] AS [SinifAd]
+    FROM [dbo].[vOgrenciDers] AS [vOgrenciDers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vOgrenciNot" EntityType="Self.vOgrenciNot" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vOgrenciNot].[DersAd] AS [DersAd], 
+    [vOgrenciNot].[OgrenciNotID] AS [OgrenciNotID], 
+    [vOgrenciNot].[OgrenciId] AS [OgrenciId], 
+    [vOgrenciNot].[DersId] AS [DersId], 
+    [vOgrenciNot].[SinavTuru] AS [SinavTuru], 
+    [vOgrenciNot].[Vize] AS [Vize], 
+    [vOgrenciNot].[Final] AS [Final], 
+    [vOgrenciNot].[Bütünleme] AS [Bütünleme], 
+    [vOgrenciNot].[Ad] AS [Ad], 
+    [vOgrenciNot].[OgrenciNo] AS [OgrenciNo], 
+    [vOgrenciNot].[Soyad] AS [Soyad]
+    FROM [dbo].[vOgrenciNot] AS [vOgrenciNot]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Ogrenci_Sinif" Association="Self.FK_Ogrenci_Sinif">
+      <End Role="Sinif" EntitySet="Sinif" />
+      <End Role="Ogrenci" EntitySet="Ogrenci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciDers_Ders" Association="Self.FK_OgrenciDers_Ders">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciNot_Ders1" Association="Self.FK_OgrenciNot_Ders1">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="OgrenciNot" EntitySet="OgrenciNot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciNot_Ogrenci" Association="Self.FK_OgrenciNot_Ogrenci">
+      <End Role="Ogrenci" EntitySet="Ogrenci" />
+      <End Role="OgrenciNot" EntitySet="OgrenciNot" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

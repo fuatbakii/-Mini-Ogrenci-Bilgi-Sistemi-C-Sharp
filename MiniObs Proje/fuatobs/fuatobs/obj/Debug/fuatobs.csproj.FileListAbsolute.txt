@@ -1,0 +1,169 @@
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\fuatobs.exe.config
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\fuatobs.exe
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\fuatobs.pdb
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.AssemblyReference.cache
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.SuggestedBindingRedirects.cache
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.Form1.resources
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.OgrenciEklemeFormu.resources
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.Properties.Resources.resources
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.GenerateResource.cache
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.CoreCompileInputs.cache
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.exe
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.pdb
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.dll
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.xml
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fuat36\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.CopyComplete
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fuatobs.exe.config
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fuatobs.exe
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fuatobs.pdb
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.xml
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.Form1.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.OgrenciEklemeFormu.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.Properties.Resources.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.CopyComplete
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.exe
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.pdb
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.ÖğrenciListeleme.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.DersEklemeform.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.SınıfEklemeForm.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.ÖgrenciDersEklemeFORM.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.Form2.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fuatobs.exe.config
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fuatobs.exe
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fuatobs.pdb
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\EntityFramework.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\EntityFramework.xml
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.DersEklemeform.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.Form1.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.Form2.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.OgrenciEklemeFormu.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.Properties.Resources.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.SınıfEklemeForm.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.ÖgrenciDersEklemeFORM.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.ÖğrenciListeleme.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.GenerateResource.cache
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.csproj.CopyComplete
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.exe
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.pdb
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.ANA_EKRAN.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.Form3.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\obj\Debug\fuatobs.ÖgrenciNotgirme.resources
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\EnvDTE.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\Desktop\Yeni klasör\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\EnvDTE.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.ANA_EKRAN.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.Form3.resources
+C:\Users\Dell\source\repos\fuatobs\fuatobs\obj\Debug\fuatobs.ÖgrenciNotgirme.resources

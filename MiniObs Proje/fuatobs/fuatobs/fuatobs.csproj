@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEDD387B-82CA-4167-A535-7156971D2C8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fuatobs</RootNamespace>
+    <AssemblyName>fuatobs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANAEKRAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANAEKRAN.Designer.cs">
+      <DependentUpon>ANAEKRAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deneme.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ders.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DersEklemeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersEklemeform.Designer.cs">
+      <DependentUpon>DersEklemeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fuatobsdbDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fuatobsdbDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ogreciisleri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEklemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEklemeFormu.Designer.cs">
+      <DependentUpon>OgrenciEklemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrencii.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciNot.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogretmen.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinif.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SınıfEklemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SınıfEklemeForm.Designer.cs">
+      <DependentUpon>SınıfEklemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vOgrenci.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vOgrenciDers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vOgrenciNot.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ÖgrenciDersEklemeFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖgrenciDersEklemeFORM.Designer.cs">
+      <DependentUpon>ÖgrenciDersEklemeFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖgrencininNOTU.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ÖgrenciNotgirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖgrenciNotgirme.Designer.cs">
+      <DependentUpon>ÖgrenciNotgirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖğrenciListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖğrenciListeleme.Designer.cs">
+      <DependentUpon>ÖğrenciListeleme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ANAEKRAN.resx">
+      <DependentUpon>ANAEKRAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersEklemeform.resx">
+      <DependentUpon>DersEklemeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEklemeFormu.resx">
+      <DependentUpon>OgrenciEklemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SınıfEklemeForm.resx">
+      <DependentUpon>SınıfEklemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖgrenciDersEklemeFORM.resx">
+      <DependentUpon>ÖgrenciDersEklemeFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖgrenciNotgirme.resx">
+      <DependentUpon>ÖgrenciNotgirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖğrenciListeleme.resx">
+      <DependentUpon>ÖğrenciListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="fuatobsdbDataSet.xsc">
+      <DependentUpon>fuatobsdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet.xss">
+      <DependentUpon>fuatobsdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet1.xsc">
+      <DependentUpon>fuatobsdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet1.xss">
+      <DependentUpon>fuatobsdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet10.xsc">
+      <DependentUpon>fuatobsdbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet10.xss">
+      <DependentUpon>fuatobsdbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet11.xsc">
+      <DependentUpon>fuatobsdbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet11.xss">
+      <DependentUpon>fuatobsdbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet12.xsc">
+      <DependentUpon>fuatobsdbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet12.xss">
+      <DependentUpon>fuatobsdbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet13.xsc">
+      <DependentUpon>fuatobsdbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet13.xss">
+      <DependentUpon>fuatobsdbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet14.xsc">
+      <DependentUpon>fuatobsdbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet14.xss">
+      <DependentUpon>fuatobsdbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet15.xsc">
+      <DependentUpon>fuatobsdbDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet15.xss">
+      <DependentUpon>fuatobsdbDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet2.xsc">
+      <DependentUpon>fuatobsdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet2.xss">
+      <DependentUpon>fuatobsdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet3.xsc">
+      <DependentUpon>fuatobsdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet3.xss">
+      <DependentUpon>fuatobsdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet4.xsc">
+      <DependentUpon>fuatobsdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet4.xss">
+      <DependentUpon>fuatobsdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet5.xsc">
+      <DependentUpon>fuatobsdbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet5.xss">
+      <DependentUpon>fuatobsdbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet6.xsc">
+      <DependentUpon>fuatobsdbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet6.xss">
+      <DependentUpon>fuatobsdbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet7.xsc">
+      <DependentUpon>fuatobsdbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet7.xss">
+      <DependentUpon>fuatobsdbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet8.xsc">
+      <DependentUpon>fuatobsdbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet8.xss">
+      <DependentUpon>fuatobsdbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet9.xsc">
+      <DependentUpon>fuatobsdbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="fuatobsdbDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fuatobsdbDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fuatobsdbDataSet9.xss">
+      <DependentUpon>fuatobsdbDataSet9.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10216-woman-student-medium-dark-skin-tone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62857-notebook-with-decorative-cover-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups-Meeting-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

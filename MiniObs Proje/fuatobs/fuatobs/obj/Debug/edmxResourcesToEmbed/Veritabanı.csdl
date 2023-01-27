@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fuatobsdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="fuatobsdbEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(fuatobsdbModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(fuatobsdbModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="Ders" EntityType="fuatobsdbModel.Ders" />
+    <EntitySet Name="Ogrenci" EntityType="fuatobsdbModel.Ogrenci" />
+    <EntitySet Name="OgrenciDers" EntityType="fuatobsdbModel.OgrenciDers" />
+    <EntitySet Name="OgrenciNot" EntityType="fuatobsdbModel.OgrenciNot" />
+    <EntitySet Name="Sinif" EntityType="fuatobsdbModel.Sinif" />
+    <EntitySet Name="sysdiagrams" EntityType="fuatobsdbModel.sysdiagrams" />
+    <EntitySet Name="vOgrenci" EntityType="fuatobsdbModel.vOgrenci" />
+    <EntitySet Name="vOgrenciDers" EntityType="fuatobsdbModel.vOgrenciDers" />
+    <EntitySet Name="vOgrenciNot" EntityType="fuatobsdbModel.vOgrenciNot" />
+    <AssociationSet Name="FK_OgrenciDers_Ders" Association="fuatobsdbModel.FK_OgrenciDers_Ders">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciNot_Ders1" Association="fuatobsdbModel.FK_OgrenciNot_Ders1">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="OgrenciNot" EntitySet="OgrenciNot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ogrenci_Sinif" Association="fuatobsdbModel.FK_Ogrenci_Sinif">
+      <End Role="Sinif" EntitySet="Sinif" />
+      <End Role="Ogrenci" EntitySet="Ogrenci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciNot_Ogrenci" Association="fuatobsdbModel.FK_OgrenciNot_Ogrenci">
+      <End Role="Ogrenci" EntitySet="Ogrenci" />
+      <End Role="OgrenciNot" EntitySet="OgrenciNot" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Ders">
+    <Key>
+      <PropertyRef Name="DersID" />
+    </Key>
+    <Property Name="DersID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DersAd" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OgrenciDers" Relationship="fuatobsdbModel.FK_OgrenciDers_Ders" FromRole="Ders" ToRole="OgrenciDers" />
+    <NavigationProperty Name="OgrenciNot" Relationship="fuatobsdbModel.FK_OgrenciNot_Ders1" FromRole="Ders" ToRole="OgrenciNot" />
+  </EntityType>
+  <EntityType Name="Ogrenci">
+    <Key>
+      <PropertyRef Name="OgrenciID" />
+    </Key>
+    <Property Name="OgrenciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OgrenciNo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
+    <Property Name="Cinsiyet" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Resim" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SinifId" Type="Int32" />
+    <Property Name="Memleket" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gno" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Sinif" Relationship="fuatobsdbModel.FK_Ogrenci_Sinif" FromRole="Ogrenci" ToRole="Sinif" />
+    <NavigationProperty Name="OgrenciNot" Relationship="fuatobsdbModel.FK_OgrenciNot_Ogrenci" FromRole="Ogrenci" ToRole="OgrenciNot" />
+  </EntityType>
+  <EntityType Name="OgrenciDers">
+    <Key>
+      <PropertyRef Name="OgrenciDersID" />
+    </Key>
+    <Property Name="OgrenciDersID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OgrenciId" Type="Int32" />
+    <Property Name="DersId" Type="Int32" />
+    <Property Name="OgrenciNo" Type="Int32" />
+    <NavigationProperty Name="Ders" Relationship="fuatobsdbModel.FK_OgrenciDers_Ders" FromRole="OgrenciDers" ToRole="Ders" />
+  </EntityType>
+  <EntityType Name="OgrenciNot">
+    <Key>
+      <PropertyRef Name="OgrenciNotID" />
+    </Key>
+    <Property Name="OgrenciNotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OgrenciId" Type="Int32" />
+    <Property Name="DersId" Type="Int32" />
+    <Property Name="SinavTuru" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Vize" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Final" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Bütünleme" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SinavNotu" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Ders" Relationship="fuatobsdbModel.FK_OgrenciNot_Ders1" FromRole="OgrenciNot" ToRole="Ders" />
+    <NavigationProperty Name="Ogrenci" Relationship="fuatobsdbModel.FK_OgrenciNot_Ogrenci" FromRole="OgrenciNot" ToRole="Ogrenci" />
+  </EntityType>
+  <EntityType Name="Sinif">
+    <Key>
+      <PropertyRef Name="SinifID" />
+    </Key>
+    <Property Name="SinifID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SinifAd" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ogrenci" Relationship="fuatobsdbModel.FK_Ogrenci_Sinif" FromRole="Sinif" ToRole="Ogrenci" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vOgrenci">
+    <Key>
+      <PropertyRef Name="OgrenciId" />
+    </Key>
+    <Property Name="OgrenciId" Type="Int32" Nullable="false" />
+    <Property Name="OgrenciNo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
+    <Property Name="Cinsiyet" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Resim" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SinifId" Type="Int32" />
+    <Property Name="SinifAd" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Memleket" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vOgrenciDers">
+    <Key>
+      <PropertyRef Name="DersAd" />
+      <PropertyRef Name="OgrenciDersID" />
+    </Key>
+    <Property Name="DersAd" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OgrenciDersID" Type="Int32" Nullable="false" />
+    <Property Name="OgrenciId" Type="Int32" />
+    <Property Name="DersId" Type="Int32" />
+    <Property Name="OgrenciNo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SinifId" Type="Int32" />
+    <Property Name="SinifAd" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vOgrenciNot">
+    <Key>
+      <PropertyRef Name="DersAd" />
+      <PropertyRef Name="OgrenciNotID" />
+    </Key>
+    <Property Name="DersAd" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OgrenciNotID" Type="Int32" Nullable="false" />
+    <Property Name="OgrenciId" Type="Int32" />
+    <Property Name="DersId" Type="Int32" />
+    <Property Name="SinavTuru" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Vize" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Final" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Bütünleme" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OgrenciNo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_OgrenciDers_Ders">
+    <End Type="fuatobsdbModel.Ders" Role="Ders" Multiplicity="0..1" />
+    <End Type="fuatobsdbModel.OgrenciDers" Role="OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersID" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="DersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciNot_Ders1">
+    <End Type="fuatobsdbModel.Ders" Role="Ders" Multiplicity="0..1" />
+    <End Type="fuatobsdbModel.OgrenciNot" Role="OgrenciNot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersID" />
+      </Principal>
+      <Dependent Role="OgrenciNot">
+        <PropertyRef Name="DersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ogrenci_Sinif">
+    <End Type="fuatobsdbModel.Sinif" Role="Sinif" Multiplicity="0..1" />
+    <End Type="fuatobsdbModel.Ogrenci" Role="Ogrenci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sinif">
+        <PropertyRef Name="SinifID" />
+      </Principal>
+      <Dependent Role="Ogrenci">
+        <PropertyRef Name="SinifId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciNot_Ogrenci">
+    <End Type="fuatobsdbModel.Ogrenci" Role="Ogrenci" Multiplicity="0..1" />
+    <End Type="fuatobsdbModel.OgrenciNot" Role="OgrenciNot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenci">
+        <PropertyRef Name="OgrenciID" />
+      </Principal>
+      <Dependent Role="OgrenciNot">
+        <PropertyRef Name="OgrenciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
